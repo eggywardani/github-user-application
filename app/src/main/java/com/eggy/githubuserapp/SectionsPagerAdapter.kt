@@ -10,15 +10,16 @@ class SectionsPagerAdapter(private val mContext: Context, fm: FragmentManager) :
 
 
     private val TAB_TITLE = intArrayOf(R.string.tab_follower, R.string.tab_following)
-    override fun getCount(): Int {
-        return 2
-    }
 
     override fun getItem(position: Int): Fragment {
         return when (position) {
             0 -> FollowersFragment()
             else -> FollowingFragment()
         }
+    }
+
+    override fun getCount(): Int {
+        return 2
     }
 
     override fun getPageTitle(position: Int): CharSequence? {
