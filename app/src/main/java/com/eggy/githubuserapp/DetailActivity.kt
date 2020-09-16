@@ -3,10 +3,10 @@ package com.eggy.githubuserapp
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
+import kotlinx.android.synthetic.main.activity_detail.*
 import kotlinx.android.synthetic.main.detail_user.*
 import kotlinx.android.synthetic.main.detail_user_2.*
 import kotlinx.android.synthetic.main.item_user.tv_name
-import kotlinx.android.synthetic.main.item_user.tv_username
 
 class DetailActivity : AppCompatActivity() {
 
@@ -33,14 +33,24 @@ class DetailActivity : AppCompatActivity() {
 
 
 
+        setupViewPager()
         supportActionBar?.title = data?.username
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
 
     }
 
     override fun onSupportNavigateUp(): Boolean {
         onBackPressed()
         return super.onSupportNavigateUp()
+    }
+
+
+    private fun setupViewPager() {
+        val sectionsPagerAdapter = SectionsPagerAdapter(this, supportFragmentManager)
+        view_pager.adapter = sectionsPagerAdapter
+        tabs.setupWithViewPager(view_pager)
+
     }
 
 }

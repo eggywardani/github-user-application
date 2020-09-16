@@ -21,17 +21,11 @@ class MainActivity : AppCompatActivity() {
 
         list.addAll(UsersData.listData)
         showList()
-        setupViewPager()
 
 
     }
 
-    private fun setupViewPager() {
-        val sectionsPagerAdapter = SectionsPagerAdapter(this, supportFragmentManager)
-        view_pager.adapter = sectionsPagerAdapter
-        tabs.setupWithViewPager(view_pager)
 
-    }
 
 
     private fun showList() {
