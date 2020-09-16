@@ -7,21 +7,17 @@ import androidx.fragment.app.FragmentPagerAdapter
 
 class SectionsPagerAdapter(private val mContext: Context, fm: FragmentManager) :
     FragmentPagerAdapter(fm, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT) {
-
-
+    
     private val TAB_TITLE = intArrayOf(R.string.tab_follower, R.string.tab_following)
-
     override fun getItem(position: Int): Fragment {
         return when (position) {
             0 -> FollowersFragment()
             else -> FollowingFragment()
         }
     }
-
     override fun getCount(): Int {
         return 2
     }
-
     override fun getPageTitle(position: Int): CharSequence? {
         return mContext.resources.getString(TAB_TITLE[position])
     }
