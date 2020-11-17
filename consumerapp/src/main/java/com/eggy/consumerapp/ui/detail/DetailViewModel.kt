@@ -49,6 +49,7 @@ class DetailViewModel:ViewModel() {
                 } catch (e: Exception) {
                     Log.d("Exception", e.message.toString())
 
+
                 }
             }
 

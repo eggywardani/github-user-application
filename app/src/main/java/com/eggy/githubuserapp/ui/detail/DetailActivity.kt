@@ -123,11 +123,8 @@ class DetailActivity : AppCompatActivity() {
     @SuppressLint("Recycle")
     private fun initView() {
         val cursor = contentResolver.query(uriWithId, null, null, null, null) as Cursor
-        if (cursor.moveToNext()) {
-            setFavorite(true)
-        } else {
-            setFavorite(false)
-        }
+        setFavorite(cursor.moveToNext())
+        cursor.close()
     }
 
 

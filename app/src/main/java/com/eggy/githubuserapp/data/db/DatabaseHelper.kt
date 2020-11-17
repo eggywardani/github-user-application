@@ -19,7 +19,7 @@ internal class DatabaseHelper(context: Context) :
     companion object {
         private const val DATABASE_NAME = "dbfavorite"
         private const val DATABASE_VERSION = 1
-        private val SQL_CREATE_TABLE_FAVORITE = "CREATE TABLE $TABLE_NAME (" +
+        private const val SQL_CREATE_TABLE_FAVORITE = "CREATE TABLE $TABLE_NAME (" +
                 " $_ID INTEGER PRIMARY KEY," +
                 " $NAME TEXT NOT NULL," +
                 " $USERNAME TEXT NOT NULL," +

@@ -34,14 +34,12 @@ class FavoriteProvider : ContentProvider() {
         uri: Uri, projection: Array<String>?, selection: String?,
         selectionArgs: Array<String>?, sortOrder: String?
     ): Cursor? {
-        val cursor: Cursor?
-        when (sUriMatcher.match(uri)) {
-            FAV -> cursor = favHelper.queryAll()
-            FAV_ID -> cursor = favHelper.queryById(uri.lastPathSegment.toString())
-            else -> cursor = null
+        return when (sUriMatcher.match(uri)) {
+            FAV ->  favHelper.queryAll()
+            FAV_ID ->  favHelper.queryById(uri.lastPathSegment.toString())
+            else ->  null
         }
 
-        return cursor
     }
 
 
