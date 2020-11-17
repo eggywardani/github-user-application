@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SplashScreen">
+    tools:context=".ui.main.SplashScreen">
 
 
     <com.airbnb.lottie.LottieAnimationView
@@ -17,7 +17,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
-        app:lottie_rawRes="@raw/github_logo" />
+        app:lottie_fileName="github.json"/>
 
     <TextView
         android:id="@+id/textView"

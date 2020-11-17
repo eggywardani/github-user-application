@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Github User App</string>
+    <string name="name">Nama</string>
+    <string name="followers">Pengikut</string>
+    <string name="following">Mengikuti</string>
+    <string name="company">Perusahaan</string>
+    <string name="location">Lokasi</string>
+    <string name="amount_of_followers">0</string>
+    <string name="amount_of_following">0</string>
+    <string name="amount_of_repository">0</string>
+    <string name="repository">Direktori</string>
+    <string name="username">Nama Pengguna</string>
+    <string name="search">Cari</string>
+    <string name="search_hint">cari pengguna</string>
+    <string name="tab_followers">Pengikut</string>
+    <string name="tab_following">Mengikuti</string>
+    <string name="language">Bahasa</string>
+    <string name="favorite">Suka</string>
+    <string name="unfavorite">Batal Suka</string>
+    <string name="settings">Pengaturan</string>
+    <string name="reminder">Pengingat</string>
+    <string name="change">Ubah</string>
+    <string name="alarm">Alarm</string>
+    <string name="daily">Pengingat Harian</string>
+    <string name="daily_reminder_message">Mari temukan pengguna kesukaanmu di Github</string>
+    <string name="cancel_setup_alarm">Pengingat Harian telah dibatalkan</string>
+    <string name="set_setup_alarm">Pengingat Harian telah diatur</string>
+    <string name="empty">Kosong</string>
+
+
+</resources>

@@ -2,19 +2,43 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.eggy.githubuserapp">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <permission android:name="com.eggy.githubuserapp.READ_DATABASE" android:protectionLevel="normal" />
+    <permission android:name="com.eggy.githubuserapp.WRITE_DATABASE" android:protectionLevel="normal" />
+
     <application
+        android:name=".helper.App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme.NoActionBar">
+        android:theme="@style/AppTheme">
+        <provider
+            android:name=".provider.FavoriteProvider"
+            android:authorities="com.eggy.githubuserapp"
+            android:enabled="true"
+            android:exported="true"
+            android:readPermission="com.eggy.githubuserapp.READ_DATABASE"
+            android:writePermission="com.eggy.githubuserapp.WRITE_DATABASE" >
+
+        </provider>
+
+        <receiver
+            android:name=".alarm.AlarmReceiver"
+            android:enabled="true"
+            android:exported="true">
+
+        </receiver>
+
+        <activity android:name=".ui.settings.SettingsActivity" />
+        <activity android:name=".ui.favorite.FavoriteActivity" />
+        <activity android:name=".ui.detail.DetailActivity" />
         <activity
-            android:name=".DetailActivity"
-            android:theme="@style/AppTheme" />
-
-
-        <activity android:name=".SplashScreen">
+            android:name=".ui.main.SplashScreen"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,7 +46,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.main.MainActivity"
             android:theme="@style/AppTheme" />
     </application>
 

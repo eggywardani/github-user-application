@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Consumer App</string>
+    <string name="name">Name</string>
+    <string name="followers">Followers</string>
+    <string name="following">Following</string>
+    <string name="company">Company</string>
+    <string name="location">Location</string>
+    <string name="amount_of_followers">0</string>
+    <string name="amount_of_following">0</string>
+    <string name="amount_of_repository">0</string>
+    <string name="repository">Repository</string>
+    <string name="username">Username</string>
+    <string name="search">Search</string>
+    <string name="search_hint">search users</string>
+    <string name="tab_followers">Followers</string>
+    <string name="tab_following">Following</string>
+    <string name="language">Language</string>
+    <string name="favorite">Favorite</string>
+    <string name="unfavorite">Unfavorite</string>
+    <string name="settings">Settings</string>
+    <string name="reminder">Reminder</string>
+    <string name="change">Change</string>
+    <string name="alarm">Alarm</string>
+    <string name="daily">Daily Reminder</string>
+    <string name="daily_reminder_message">Let\'s Find your favorite users on Github</string>
+    <string name="cancel_setup_alarm">Daily Reminder Cancelled</string>
+    <string name="set_setup_alarm">Daily Reminder set up</string>
+    <string name="empty">Empty</string>
+
+
+</resources>
