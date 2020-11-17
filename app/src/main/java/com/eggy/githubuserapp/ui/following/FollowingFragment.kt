@@ -1,7 +1,6 @@
 package com.eggy.githubuserapp.ui.following
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,19 +9,9 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.eggy.githubuserapp.R
-import com.eggy.githubuserapp.data.entity.Followers
 import com.eggy.githubuserapp.data.entity.Following
 import com.eggy.githubuserapp.data.entity.User
-import com.eggy.githubuserapp.ui.followers.FollowersAdapter
-import com.eggy.githubuserapp.ui.followers.FollowersFragment
-import com.eggy.githubuserapp.ui.followers.FollowersViewModel
-import com.loopj.android.http.AsyncHttpClient
-import com.loopj.android.http.AsyncHttpResponseHandler
-import cz.msebera.android.httpclient.Header
-import kotlinx.android.synthetic.main.fragment_followers.*
 import kotlinx.android.synthetic.main.fragment_following.*
-import org.json.JSONArray
-import org.json.JSONObject
 
 class FollowingFragment : Fragment() {
 

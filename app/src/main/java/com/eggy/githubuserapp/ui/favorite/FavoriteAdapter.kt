@@ -7,11 +7,9 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.eggy.githubuserapp.R
-import com.eggy.githubuserapp.ui.detail.DetailActivity
 import com.eggy.githubuserapp.data.entity.User
-import kotlinx.android.synthetic.main.item_user_favorite.view.iv_avatar
-import kotlinx.android.synthetic.main.item_user_favorite.view.tv_name
-import kotlinx.android.synthetic.main.item_user_favorite.view.tv_username
+import com.eggy.githubuserapp.ui.detail.DetailActivity
+import kotlinx.android.synthetic.main.item_user_favorite.view.*
 
 class FavoriteAdapter:RecyclerView.Adapter<FavoriteAdapter.FavoriteViewHolder>() {
 

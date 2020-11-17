@@ -24,7 +24,6 @@ import com.eggy.githubuserapp.data.entity.User
 import com.eggy.githubuserapp.ui.main.SectionsPagerAdapter
 import kotlinx.android.synthetic.main.activity_detail.*
 import kotlinx.android.synthetic.main.detail_user.*
-import kotlinx.android.synthetic.main.detail_user.tv_name
 import kotlinx.android.synthetic.main.detail_user_2.*
 
 class DetailActivity : AppCompatActivity() {

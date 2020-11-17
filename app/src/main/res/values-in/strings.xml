@@ -26,7 +26,7 @@
     <string name="daily_reminder_message">Mari temukan pengguna kesukaanmu di Github</string>
     <string name="cancel_setup_alarm">Pengingat Harian telah dibatalkan</string>
     <string name="set_setup_alarm">Pengingat Harian telah diatur</string>
-    <string name="empty">Kosong</string>
+    <string name="empty_data">Data Kosong</string>
 
 
 </resources>

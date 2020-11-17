@@ -4,7 +4,6 @@ import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.eggy.githubuserapp.data.Constants
 import com.eggy.githubuserapp.data.Constants.API_KEY
 import com.eggy.githubuserapp.data.Constants.BASE_URL
 import com.eggy.githubuserapp.data.entity.User

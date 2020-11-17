@@ -1,9 +1,9 @@
 package com.eggy.consumerapp.ui.main
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import androidx.appcompat.app.AppCompatActivity
 import com.eggy.consumerapp.R
 
 class SplashScreen : AppCompatActivity() {

@@ -1,27 +1,17 @@
 package com.eggy.githubuserapp.ui.followers
 
 import android.os.Bundle
-import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.eggy.githubuserapp.R
 import com.eggy.githubuserapp.data.entity.Followers
 import com.eggy.githubuserapp.data.entity.User
-import com.eggy.githubuserapp.ui.following.FollowingFragment
-import com.eggy.githubuserapp.ui.main.MainViewModel
-import com.eggy.githubuserapp.ui.main.UserAdapter
-import com.loopj.android.http.AsyncHttpClient
-import com.loopj.android.http.AsyncHttpResponseHandler
-import cz.msebera.android.httpclient.Header
-import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.fragment_followers.*
-import org.json.JSONArray
-import org.json.JSONObject
 
 class FollowersFragment : Fragment() {
 

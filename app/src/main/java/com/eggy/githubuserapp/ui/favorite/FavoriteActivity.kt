@@ -1,11 +1,11 @@
 package com.eggy.githubuserapp.ui.favorite
 
 import android.database.ContentObserver
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.HandlerThread
 import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.eggy.githubuserapp.R
 import com.eggy.githubuserapp.data.db.DatabaseContract.FavoriteColumns.Companion.CONTENT_URI
@@ -75,8 +75,10 @@ class FavoriteActivity : AppCompatActivity() {
             val fav = deferredNotes.await()
             if (fav.size > 0) {
                 adapter.listFavUser = fav
+                isEmptyData(true)
             } else {
                 adapter.listFavUser = ArrayList()
+                isEmptyData(false)
             }
         }
     }
@@ -89,6 +91,20 @@ class FavoriteActivity : AppCompatActivity() {
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
         outState.putParcelableArrayList(EXTRA_STATE, adapter.listFavUser)
+    }
+
+    private fun isEmptyData(state:Boolean){
+        when(state){
+            true -> {
+                iv_empty.visibility = View.GONE
+                tv_empty.visibility = View.GONE
+            }
+            else -> {
+                iv_empty.visibility = View.VISIBLE
+                tv_empty.visibility = View.VISIBLE
+            }
+        }
+
     }
 
 

@@ -25,7 +25,8 @@
     <string name="daily_reminder_message">Let\'s Find your favorite users on Github</string>
     <string name="cancel_setup_alarm">Daily Reminder Cancelled</string>
     <string name="set_setup_alarm">Daily Reminder set up</string>
-    <string name="empty">Empty</string>
+    <string name="empty_data">Empty Data</string>
+
 
 
 </resources>

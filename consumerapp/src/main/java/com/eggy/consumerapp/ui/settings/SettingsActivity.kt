@@ -3,10 +3,10 @@ package com.eggy.consumerapp.ui.settings
 import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.Settings
 import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 import com.eggy.consumerapp.R
 import com.eggy.consumerapp.alarm.AlarmReceiver
 import kotlinx.android.synthetic.main.activity_settings.*

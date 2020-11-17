@@ -7,7 +7,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.eggy.githubuserapp.R
 import com.eggy.githubuserapp.data.entity.Followers
-import com.eggy.githubuserapp.data.entity.User
 import kotlinx.android.synthetic.main.item_followers.view.*
 
 class FollowersAdapter(private val listFollower:ArrayList<Followers>):RecyclerView.Adapter<FollowersAdapter.FollowersViewHolder>() {
